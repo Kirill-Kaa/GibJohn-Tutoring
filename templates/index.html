@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col" style="margin-top: 150px;">
+                <h1>
+                    <font color="1E3A5F">Gib</font>
+                    <font color="722F37">John</font>
+                    Turing
+                </h1>
+                <p class="mt-3 mb-4" style="font-size: 25px;">We promoting all sorts of education, in all places of our planet. Cities,
+                    villages, islands, no
+                    meter wherever you are.
+                    Better to be an island boy then a city boy.</p>
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="btn btn-outline-primary btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <h4 class="text-primary">200K+</h4>
+                        <p>Students</p>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text-primary">96</h4>
+                        <p>Tutors</p>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text-primary">97%</h4>
+                        <p>Success</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <img src="{{url_for('static', filename='images/Container.png')}}" alt="Hero Image"
+                        class="img-fluid">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+{% endblock %}
