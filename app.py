@@ -8,9 +8,6 @@ import json, csv, sqlite3
 import click
 from contextlib import contextmanager
 
-import os
-from openai import OpenAI
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'your_secret_key'
