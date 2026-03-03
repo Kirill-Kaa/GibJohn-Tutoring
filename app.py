@@ -11,8 +11,6 @@ from contextlib import contextmanager
 import os
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'your_secret_key'
@@ -419,25 +417,6 @@ def seed_users():
     db.session.commit()
 
     return "Demo users created successfully!"
-
-
-@app.route("/ai-chatbot", methods=["POST"])
-@login_required
-def ai_chatbot():
-
-    user_message = request.json.get("message")
-
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",  # affordable + good
-        messages=[
-            {"role": "system", "content": "You are a helpful educational assistant for students and tutors."},
-            {"role": "user", "content": user_message}
-        ]
-    )
-
-    ai_reply = response.choices[0].message.content
-
-    return {"response": ai_reply}
 
 
 if __name__ == "__main__":
