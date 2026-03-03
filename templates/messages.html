@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container mt-5">
+    <h2>Your Conversations</h2>
+
+    {% for convo in conversations %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <a href="{{ url_for('conversation', conversation_id=convo.id) }}">
+                {% if convo.student_id == current_user.id %}
+                {{ convo.tutor.username }}
+                {% else %}
+                {{ convo.student.username }}
+                {% endif %}
+            </a>
+            {% set last_message = convo.messages[-1] if convo.messages else None %}
+
+            {% if last_message %}
+            <p class="text-muted small">
+                {{ last_message.content[:40] }}...
+            </p>
+            {% endif %}
+        </div>
+    </div>
+    {% else %}
+    <p>No conversations yet.</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

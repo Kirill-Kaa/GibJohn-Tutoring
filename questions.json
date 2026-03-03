@@ -1,0 +1,134 @@
+{
+  "Mathematics": {
+    "Algebra Basics": [
+      {
+        "question_text": "What is 2 + 2?",
+        "option_a": "3",
+        "option_b": "4",
+        "option_c": "5",
+        "option_d": "6",
+        "correct_answer": "B"
+      },
+      {
+        "question_text": "Solve: 5 * 2",
+        "option_a": "7",
+        "option_b": "8",
+        "option_c": "10",
+        "option_d": "12",
+        "correct_answer": "C"
+      }
+    ],
+    "Geometry Basics": [
+      {
+        "question_text": "How many degrees are in a triangle?",
+        "option_a": "90",
+        "option_b": "180",
+        "option_c": "270",
+        "option_d": "360",
+        "correct_answer": "B"
+      },
+      {
+        "question_text": "A square has how many sides?",
+        "option_a": "3",
+        "option_b": "4",
+        "option_c": "5",
+        "option_d": "6",
+        "correct_answer": "B"
+      },
+      {
+        "question_text": "What is the area formula of a rectangle?",
+        "option_a": "length + width",
+        "option_b": "length × width",
+        "option_c": "2 × length",
+        "option_d": "width ÷ length",
+        "correct_answer": "B"
+      }
+    ]
+  },
+
+  "Computer Science": {
+    "Python Basics": [
+      {
+        "question_text": "Which keyword defines a function?",
+        "option_a": "func",
+        "option_b": "def",
+        "option_c": "function",
+        "option_d": "define",
+        "correct_answer": "B"
+      },
+      {
+        "question_text": "Which data type stores text?",
+        "option_a": "int",
+        "option_b": "float",
+        "option_c": "str",
+        "option_d": "bool",
+        "correct_answer": "C"
+      },
+      {
+        "question_text": "How do you start a for loop?",
+        "option_a": "for i in range():",
+        "option_b": "loop i:",
+        "option_c": "foreach i:",
+        "option_d": "repeat i:",
+        "correct_answer": "A"
+      }
+    ],
+    "Programming Concepts": [
+      {
+        "question_text": "What is a variable?",
+        "option_a": "A function",
+        "option_b": "A container for data",
+        "option_c": "A loop",
+        "option_d": "An operator",
+        "correct_answer": "B"
+      },
+      {
+        "question_text": "What does HTML stand for?",
+        "option_a": "Hyper Trainer Marking Language",
+        "option_b": "Hyper Text Markup Language",
+        "option_c": "High Text Markdown Language",
+        "option_d": "Hyper Text Machine Language",
+        "correct_answer": "B"
+      }
+    ]
+  },
+
+  "English": {
+    "Grammar Basics": [
+      {
+        "question_text": "Choose correct sentence:",
+        "option_a": "She go to school",
+        "option_b": "She goes to school",
+        "option_c": "She going school",
+        "option_d": "She gone school",
+        "correct_answer": "B"
+      },
+      {
+        "question_text": "Select the correct plural form of 'child':",
+        "option_a": "childs",
+        "option_b": "childes",
+        "option_c": "children",
+        "option_d": "childrens",
+        "correct_answer": "C"
+      }
+    ],
+    "Vocabulary Test": [
+      {
+        "question_text": "What is a synonym for 'happy'?",
+        "option_a": "sad",
+        "option_b": "angry",
+        "option_c": "joyful",
+        "option_d": "tired",
+        "correct_answer": "C"
+      },
+      {
+        "question_text": "What does 'rapid' mean?",
+        "option_a": "slow",
+        "option_b": "fast",
+        "option_c": "weak",
+        "option_d": "quiet",
+        "correct_answer": "B"
+      }
+    ]
+  }
+}

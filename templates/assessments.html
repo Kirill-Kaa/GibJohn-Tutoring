@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Assessments{% endblock %}
+{% block content %}
+
+<section class="container">
+<h1>{{ course.name }} Assessments</h1>
+
+<ul class="list-group">
+    {% for assessment in course.assessments %}
+        <li class="list-group-item list-group-item-action">
+            <a href="{{ url_for('take_assessment', assessment_id=assessment.id) }}">
+                {{ assessment.title }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+<button class="btn  mt-3">
+    <a href="{{ url_for('courses') }}">Back to Courses</a>
+</button>
+
+
+</section>
+{% endblock %}

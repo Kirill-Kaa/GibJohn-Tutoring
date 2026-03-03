@@ -1,0 +1,30 @@
+{%extends "base.html"%}
+{%block content%}
+
+<h1>Assessment Result</h1>
+
+<h2>
+    Your Score: {{ score }} / {{ total }}
+</h2>
+
+<h3>
+    Percentage: {{ percentage | round(2) }}%
+</h3>
+
+{% if percentage >= 70 %}
+<p style="color: green; font-weight: bold;">
+    ✅ Congratulations! You passed and earned points.
+</p>
+{% else %}
+<p style="color: red; font-weight: bold;">
+    ❌ You did not reach 70%. Try again.
+</p>
+{% endif %}
+
+<br>
+
+<a href="{{ url_for('courses') }}">Back to Courses</a>
+<br><br>
+<a href="{{ url_for('dashboard') }}">Go to Dashboard</a>
+
+{%endblock%}

@@ -1,0 +1,62 @@
+{% extends "base.html" %} {% block title %}Take Assessment{% endblock %} {% block content %}
+<section class="container">
+
+
+<h1>{{ assessment.title }}</h1>
+
+    <form method="POST">
+
+        {% for question in questions %}
+            <div class="mb-4 form-check">
+                <h3>
+                    Question {{ loop.index }}:
+                    {{ question.question_text }}
+                </h3>
+
+                <label>
+                    <input type="radio"
+                           name="question_{{ question.id }}"
+                           value="A"
+                           required>
+                    A) {{ question.option_a }}
+                </label>
+                <br>
+
+                <label>
+                    <input type="radio"
+                           name="question_{{ question.id }}"
+                           value="B">
+                    B) {{ question.option_b }}
+                </label>
+                <br>
+
+                <label>
+                    <input type="radio"
+                           name="question_{{ question.id }}"
+                           value="C">
+                    C) {{ question.option_c }}
+                </label>
+                <br>
+
+                <label>
+                    <input type="radio"
+                           name="question_{{ question.id }}"
+                           value="D">
+                    D) {{ question.option_d }}
+                </label>
+
+            </div>
+
+            <hr>
+
+        {% endfor %}
+
+        <button class="btn btn-primary" type="submit">Submit Assessment</button>
+
+    </form>
+
+    <br>
+    <a href="{{ url_for('courses') }}">Back to Courses</a>
+
+</section>
+{% endblock %}
