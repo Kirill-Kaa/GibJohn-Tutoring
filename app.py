@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 
 import json, csv, sqlite3
-import click
+
 from contextlib import contextmanager
 
 app = Flask(__name__)
